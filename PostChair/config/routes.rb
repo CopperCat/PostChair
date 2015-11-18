@@ -9,6 +9,12 @@ Rails.application.routes.draw do
   devise_scope :user do
     root to: "users/sessions#new"
   end
+
+  get 'dashboard' => 'home#dashboard', :as => :dashboard
+
+  resources :sensor_data
+
+  resources :manager_association
   
   #devise_for :users, controllers: {
    #            sessions: 'users/sessions'

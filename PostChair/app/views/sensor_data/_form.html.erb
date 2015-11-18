@@ -1,10 +1,10 @@
-<%= form_for(@sensor_datum) do |f| %>
-  <% if @sensor_datum.errors.any? %>
+<%= form_for(@sensor_data) do |f| %>
+  <% if @sensor_data.errors.any? %>
     <div id="error_explanation">
-      <h2><%= pluralize(@sensor_datum.errors.count, "error") %> prohibited this sensor_datum from being saved:</h2>
+      <h2><%= pluralize(@sensor_data.errors.count, "error") %> prohibited this sensor_data from being saved:</h2>
 
       <ul>
-      <% @sensor_datum.errors.full_messages.each do |message| %>
+      <% @sensor_data.errors.full_messages.each do |message| %>
         <li><%= message %></li>
       <% end %>
       </ul>

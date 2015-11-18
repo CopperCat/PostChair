@@ -15,7 +15,7 @@
   <tbody>
     <% @sensor_data.each do |sensor_datum| %>
       <tr>
-        <td><%= sensor_datum.user_id %></td>
+        <td><%= sensor_datum.user_id_id %></td>
         <td><%= sensor_datum.position %></td>
         <td><%= sensor_datum.time %></td>
         <td><%= sensor_datum.measurement %></td>
@@ -29,4 +29,4 @@
 
 <br>
 
-<%= link_to 'New Sensor datum', new_sensor_datum_path %>
+<%= link_to 'New Sensor datum', new_sensor_data_path %>
